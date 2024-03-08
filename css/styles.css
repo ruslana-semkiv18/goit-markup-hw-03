@@ -4,8 +4,23 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
 ul {
   list-style: none;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
 }
 
 a {
@@ -14,6 +29,34 @@ a {
 
 button {
   cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px; /*!!!!!*/
+  padding-left: 156px;
+  padding-right: 156px;
+  margin: 0 auto;
 }
 
 .title {
@@ -27,6 +70,23 @@ button {
 
 /* -------Header-------*/
 
+.header {
+  /*  padding-top: 24px;
+  padding-bottom: 24px;*/
+}
+
+.header-container {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-right: 332px;
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -35,10 +95,22 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-logo .span {
   color: #2e2f42;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-menu-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-menu-link {
@@ -46,12 +118,26 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-contact-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-contact-item {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-contact-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-menu-link:hover,
@@ -67,12 +153,23 @@ button {
   background-color: #2e2f42;
 }
 
+.hero-container-wrap {
+  padding: 188px 316px;
+}
+
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
+  max-width: 496px;
+}
+
+.hero-button {
+  display: flex;
+  justify-content: center;
 }
 
 .hero-order-btn {
@@ -82,6 +179,9 @@ button {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
 }
 
 .hero-order-btn:hover,
@@ -92,12 +192,17 @@ button {
 /*-------Features-------*/
 
 .features {
+  padding-top: 120px;
+  padding-bottom: 130px;
 }
 
 .features-list {
+  display: flex;
+  gap: 24px;
 }
 
 .features-item {
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .features-subtitle {
@@ -106,6 +211,7 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .features-item-text {
