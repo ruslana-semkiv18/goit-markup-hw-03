@@ -155,7 +155,7 @@ img {
   padding-bottom: 188px;
 }
 
-.hero-container-wrap {
+.hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,11 +246,11 @@ img {
 
 .team-container-item {
   text-align: center;
+  padding-top: 32px;
   padding-bottom: 32px;
 }
 
 .team-img {
-  margin-bottom: 32px;
 }
 
 .team-subtitle {
