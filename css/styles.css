@@ -81,9 +81,7 @@ img {
 .header-navigation {
   display: flex;
   align-items: center;
-  flex-grow: 1;
-  justify-content: space-between;
-  margin-right: 332px;
+  margin-right: auto;
 }
 
 .header-logo {
